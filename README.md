@@ -1,0 +1,1 @@
+# python_alapok_VIII_3_3_hiba_elkapasa
