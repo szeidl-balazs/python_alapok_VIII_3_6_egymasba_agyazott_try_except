@@ -2,16 +2,18 @@
 def read_file(file_name):
     try:
         target_file = open(file_name)
-        content = target_file.read()
-
+        
+        try:            
+            content = target_file.read()
+        
+        finally:
+            target_file.close() 
+    
     except OSError:
         print('Hiba a fájl kezelése közben!')
-
+    
     else:
-        return content               
-
-    finally:
-        target_file.close()
+        return content     
 
 
 
